@@ -1,0 +1,20 @@
+{
+    "name": "k210_module",
+    "version": "1.0.0",
+    "description": "Extension for YahBoom k210_module",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh-cn/k210_module-strings.json",
+        "_locales/zh-tw/k210_module-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}

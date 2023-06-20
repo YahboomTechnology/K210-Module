@@ -1,0 +1,24 @@
+{
+  "k210_models|block":"K210视觉模块",
+  "{id:category}k210_models":"K210视觉模块",
+  "k210_models.initialization|block":"串口初始化",
+  "k210_models.color_reg_X|block":"X轴",
+  "k210_models.color_reg_W|block":"宽度",
+  "k210_models.color_reg_Y|block":"Y轴",
+  "k210_models.color_reg_H|block":"高度",
+  "k210_models.Barcode_Sensor|block":"条形码检测",
+  "k210_models.QRcode_Sensor|block":"二维码检测",
+  "k210_models.Apriltag_Sensor|block":"机器码检测",
+  "k210_models.face_reg|block":"人脸识别",
+  "k210_models.object_detect|block":"物体检测",
+  "k210_models.self_learning|block":"自主学习检测",
+  "k210_models.handwriting_number|block":"手写数字",
+  "k210_models.Color_Sensor|block":"颜色识别",
+  "k210_models.Apriltag_id|block":"机器码id",
+  "k210_models.face_mask_detect|block":"口罩检测",
+  "k210_models.face_detect|block":"人脸检测"
+  
+
+}
+
+
