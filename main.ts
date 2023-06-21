@@ -10,7 +10,6 @@ namespace k210_models {
         SerialPin.P2,
         BaudRate.BaudRate115200
         )
-        basic.showIcon(IconNames.Happy)
     }
 
     //% blockId=k210_models_color_reg_X block="reg_X return"
