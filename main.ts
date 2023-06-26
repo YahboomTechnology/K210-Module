@@ -301,22 +301,22 @@ let object = ""
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=30
     export function self_learning():number{
-        let learning = -1
+        let Learning = -1
         let opo = ""
         let class_num = ""
         opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "10") {
-                learning = parseFloat(opo[3])
+                Learning = parseFloat(opo[3])
             } else {
-                learning = -1
+                Learning = -1
             }
         } else {
-            learning = -1
+            Learning = -1
         }
         opo = ""
-        return learning
+        return Learning
     }
 
 
