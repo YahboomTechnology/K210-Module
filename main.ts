@@ -303,6 +303,7 @@ let object = ""
     export function self_learning():number{
         let learning = -1
         let opo = ""
+        let class_num = ""
         opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
@@ -326,6 +327,7 @@ let object = ""
     export function handwriting_number():number{
         let number = -1
         let opo = ""
+        let class_num = ""
         opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
