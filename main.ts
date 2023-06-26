@@ -165,10 +165,10 @@ namespace k210_models {
                 L = length - 4
                 apriltag = opo.substr(3, L)
             } else {
-                apriltag = ""
+                apriltag = " "
             }
         } else {
-            apriltag = ""
+            apriltag = " "
         }
         opo = ""
         return apriltag
