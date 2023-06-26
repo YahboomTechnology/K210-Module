@@ -308,7 +308,7 @@ let object = ""
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "10") {
-                number = parseFloat(opo[3])
+                learning = parseFloat(opo[3])
             } else {
                 learning = -1
             }
