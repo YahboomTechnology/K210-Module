@@ -221,7 +221,7 @@ namespace k210_models {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
             if (class_num == "07") {
-                if (_22 == "1") {
+                if (_22 == "1" || _22 == "Y" ) {
                     face = "Y"
                 } else {
                     face = "N"
@@ -242,28 +242,29 @@ namespace k210_models {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=30
     export function face_reg(): number{
         let face_reg = -2
+        let face = 0
         let class_num = ""
-        let _22 = ""
         let opo = ""
+        let _rev=""
         opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
-            _22 = opo[3]
+            _rev = opo[3]
             face_reg = parseFloat("" + opo[4] + opo[5])
             if (class_num == "08") {
-                if (_22 == "Y") {
-                    face_reg = face_reg
-                } else if (_22 == "N") {
-                    face_reg = -1
+                if (_rev == "Y") {
+                    face = face_reg
+                } else {
+                    face = -1
                 }
             } else {
-                face_reg = -2
+                face = -2
             }
         } else {
-            face_reg = -2
+            face = -2
         }
         opo = ""
-        return face_reg
+        return face
 
     }
 
