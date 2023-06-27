@@ -241,7 +241,7 @@ namespace k210_models {
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=30
     export function face_reg(): number{
-        let face_reg = -2
+        let face_reg = 0
         let face = 0
         let class_num = ""
         let opo = ""
