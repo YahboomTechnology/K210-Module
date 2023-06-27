@@ -236,23 +236,24 @@ namespace k210_models {
         return face
 
     }
+
+    let face = 0
+    let _22 = ""
+    let class_num = ""
+    let opo = ""
         //% blockId=k210_models_face_reg block="face_reg Scan return"
     //% weight=100
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=30
     export function face_reg(): number{
         let face_reg = 0
-        let face = 0
-        let class_num = ""
-        let opo = ""
-        let _rev=""
         opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
-            _rev = opo[3]
+            _22 = opo[3]
             face_reg = parseFloat("" + opo[4] + opo[5])
             if (class_num == "08") {
-                if (_rev == "Y") {
+                if (_22 == "Y") {
                     face = face_reg
                 } else {
                     face = -1
