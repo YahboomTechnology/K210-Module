@@ -241,7 +241,7 @@ namespace k210_models {
     let _22 = ""
     let class_num = ""
     let opo = ""
-    let face_reg = 0
+    let face_Reg = 0
         //% blockId=k210_models_face_reg block="face_reg Scan return"
     //% weight=100
     //% blockGap=10
@@ -252,10 +252,10 @@ namespace k210_models {
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
-            face_reg = parseFloat("" + opo[4] + opo[5])
+            face_Reg = parseFloat("" + opo[4] + opo[5])
             if (class_num == "08") {
                 if (_22 == "Y") {
-                    face = face_reg
+                    face = face_Reg
                 } else {
                     face = -1
                 }
