@@ -237,15 +237,16 @@ namespace k210_models {
 
     }
 
-    let face = 0
-    let _22 = ""
-    let class_num = ""
-    let opo = ""
+
         //% blockId=k210_models_face_reg block="face_reg Scan return"
     //% weight=100
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=30
     export function face_reg(): number{
+        let face = 0
+        let _22 = ""
+        let class_num = ""
+        let opo = ""
         let face_reg = 0
         opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
