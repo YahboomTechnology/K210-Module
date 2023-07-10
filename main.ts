@@ -19,8 +19,8 @@ namespace k210_models {
     export function color_reg_X(): number{
 	   let  x= 0
        let length = 0
-    let class_num = ""
-    let opo = ""
+       let class_num = ""
+       let opo = ""
     opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
     if (opo[0] == "$") {
         class_num = "" + opo[1] + opo[2]
@@ -45,8 +45,8 @@ namespace k210_models {
     export function color_reg_Y(): number{
 	   let  y= 0
        let length = 0
-    let class_num = ""
-    let opo = ""
+       let class_num = ""
+       let opo = ""
     opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
     if (opo[0] == "$") {
         class_num = "" + opo[1] + opo[2]
@@ -71,8 +71,8 @@ namespace k210_models {
     export function color_reg_W(): number{
 	   let  w= 0
        let length = 0
-    let class_num = ""
-    let opo = ""
+       let class_num = ""
+       let opo = ""
     opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
     if (opo[0] == "$") {
         class_num = "" + opo[1] + opo[2]
@@ -98,8 +98,8 @@ namespace k210_models {
     export function color_reg_H(): number{
 	   let  h= 0
        let length = 0
-    let class_num = ""
-    let opo = ""
+       let class_num = ""
+       let opo = ""
     opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
     if (opo[0] == "$") {
         class_num = "" + opo[1] + opo[2]
@@ -129,7 +129,7 @@ namespace k210_models {
         let length = 0
         let class_num = ""
         let opo = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "02") {
@@ -157,7 +157,7 @@ namespace k210_models {
         let length = 0
         let class_num = ""
         let opo = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "03") {
@@ -181,10 +181,10 @@ namespace k210_models {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=30
     export function Apriltag_Sensor(): string {
         let apriltag = ""
-    let class_num = ""
-    let L = 0
-    let length = 0
-    let opo = ""
+        let class_num = ""
+        let L = 0
+        let length = 0
+        let opo = ""
      opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
     if (opo[0] == "$") {
         class_num = "" + opo[1] + opo[2]
@@ -216,7 +216,7 @@ namespace k210_models {
         let class_num = ""
         let _22 = ""
         let opo = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
@@ -248,7 +248,7 @@ namespace k210_models {
         let class_num = ""
         let opo = ""
         let face_Reg = 0
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
@@ -282,7 +282,7 @@ let object = ""
         let length = 0
         let class_num = ""
         let opo = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "09") {
@@ -307,7 +307,7 @@ let object = ""
         let Learning = -1
         let opo = ""
         let class_num = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "10") {
@@ -331,7 +331,7 @@ let object = ""
         let number = -1
         let opo = ""
         let class_num = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "11") {
@@ -354,7 +354,7 @@ let object = ""
         let Color = ""
         let class_num = ""
         let opo = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "01") {
@@ -378,7 +378,7 @@ let object = ""
         let Apriltag_id = ""
         let class_num = "" 
         let opo = ""        
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "04") {
@@ -405,7 +405,7 @@ let object = ""
         let class_num = ""
         let _22 = ""
         let opo = ""
-        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
