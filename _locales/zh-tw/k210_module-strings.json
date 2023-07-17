@@ -16,7 +16,10 @@
   "k210_models.handwriting_number|block":"手寫數字",
   "k210_models.Color_Sensor|block":"顔色識別",
   "k210_models.Apriltag_id|block":"機器碼id",
-  "k210_models.face_mask_detect|block":"口罩檢測"
+  "k210_models.face_mask_detect|block":"口罩檢測",
+  "k210_models.get_motor_L|block":"左電機速度",
+  "k210_models.get_motor_R|block":"右電機速度",
+  "k210_models.get_motor_speed|block":"速度解析"
   
   
 

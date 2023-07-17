@@ -16,7 +16,11 @@
   "k210_models.Color_Sensor|block":"颜色识别",
   "k210_models.Apriltag_id|block":"机器码id",
   "k210_models.face_mask_detect|block":"口罩检测",
-  "k210_models.face_detect|block":"人脸检测"
+  "k210_models.face_detect|block":"人脸检测",
+  "k210_models.get_motor_L|block":"左电机速度",
+  "k210_models.get_motor_R|block":"右电机速度",
+  "k210_models.get_motor_speed|block":"速度解析"
+  
   
 
 }

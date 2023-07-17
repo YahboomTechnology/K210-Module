@@ -17,24 +17,24 @@ namespace k210_models {
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function color_reg_X(): number{
-	   let  x= 0
-       let length = 0
-       let class_num = ""
-       let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
-    if (opo[0] == "$") {
-        class_num = "" + opo[1] + opo[2]
-        if (class_num == "01"|| class_num == "05" || class_num == "06") {
-            length = opo.length
-            x = parseFloat(opo.substr(3, 3))
+        let  x= 0
+        let length = 0
+        let class_num = ""
+        let opo = ""
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        if (opo[0] == "$") {
+            class_num = "" + opo[1] + opo[2]
+            if (class_num == "01"|| class_num == "05" || class_num == "06") {
+                length = opo.length
+                x = parseFloat(opo.substr(3, 3))
+            } else {
+                x = 0
+            }
         } else {
             x = 0
         }
-    } else {
-        x = 0
-    }
-    opo = ""
-    return x
+        opo = ""
+        return x
 
     }
 
@@ -43,24 +43,24 @@ namespace k210_models {
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function color_reg_Y(): number{
-	   let  y= 0
-       let length = 0
-       let class_num = ""
-       let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
-    if (opo[0] == "$") {
-        class_num = "" + opo[1] + opo[2]
-        if (class_num == "01"|| class_num == "05" || class_num == "06") {
-            length = opo.length
-            y = parseFloat(opo.substr(7, 3))
+        let  y= 0
+        let length = 0
+        let class_num = ""
+        let opo = ""
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        if (opo[0] == "$") {
+            class_num = "" + opo[1] + opo[2]
+            if (class_num == "01"|| class_num == "05" || class_num == "06") {
+                length = opo.length
+                y = parseFloat(opo.substr(7, 3))
+            } else {
+                y = 0
+            }
         } else {
             y = 0
         }
-    } else {
-        y = 0
-    }
-    opo = ""
-    return y
+        opo = ""
+        return y
 
     }
 
@@ -69,25 +69,25 @@ namespace k210_models {
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function color_reg_W(): number{
-	   let  w= 0
-       let length = 0
-       let class_num = ""
-       let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
-    if (opo[0] == "$") {
-        class_num = "" + opo[1] + opo[2]
-        if (class_num == "01"|| class_num == "05" || class_num == "06") {
-            length = opo.length
-            w = parseFloat(opo.substr(11, 3))
+        let  w= 0
+        let length = 0
+        let class_num = ""
+        let opo = ""
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        if (opo[0] == "$") {
+            class_num = "" + opo[1] + opo[2]
+            if (class_num == "01"|| class_num == "05" || class_num == "06") {
+                length = opo.length
+                w = parseFloat(opo.substr(11, 3))
+            } else {
+                w = 0
+            }
         } else {
             w = 0
         }
-    } else {
-        w = 0
-    }
-    opo = ""
+        opo = ""
 
-    return w
+        return w
 
     }    
 
@@ -96,24 +96,24 @@ namespace k210_models {
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function color_reg_H(): number{
-	   let  h= 0
-       let length = 0
-       let class_num = ""
-       let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
-    if (opo[0] == "$") {
-        class_num = "" + opo[1] + opo[2]
-        if (class_num == "01"|| class_num == "05" || class_num == "06") {
-            length = opo.length
-            h = parseFloat(opo.substr(15, 3))
+        let  h= 0
+        let length = 0
+        let class_num = ""
+        let opo = ""
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        if (opo[0] == "$") {
+            class_num = "" + opo[1] + opo[2]
+            if (class_num == "01"|| class_num == "05" || class_num == "06") {
+                length = opo.length
+                h = parseFloat(opo.substr(15, 3))
+            } else {
+                h = 0
+            }
         } else {
             h = 0
         }
-    } else {
-        h = 0
-    }
-    opo = ""
-    return h
+        opo = ""
+        return h
 
     }
 
@@ -129,7 +129,7 @@ namespace k210_models {
         let length = 0
         let class_num = ""
         let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "02") {
@@ -157,7 +157,7 @@ namespace k210_models {
         let length = 0
         let class_num = ""
         let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "03") {
@@ -185,21 +185,21 @@ namespace k210_models {
         let L = 0
         let length = 0
         let opo = ""
-     opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
-    if (opo[0] == "$") {
-        class_num = "" + opo[1] + opo[2]
-        if (class_num == "04") {
-            length = opo.length
-            L = length - 5
-            apriltag = opo.substr(3, L)
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        if (opo[0] == "$") {
+            class_num = "" + opo[1] + opo[2]
+            if (class_num == "04") {
+                length = opo.length
+                L = length - 5
+                apriltag = opo.substr(3, L)
+            } else {
+                apriltag = ""
+            }
         } else {
             apriltag = ""
         }
-    } else {
-        apriltag = ""
-    }
-    opo = ""
-    return apriltag
+        opo = ""
+        return apriltag
 
     }
 
@@ -216,7 +216,7 @@ namespace k210_models {
         let class_num = ""
         let _22 = ""
         let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
@@ -248,7 +248,7 @@ namespace k210_models {
         let class_num = ""
         let opo = ""
         let face_Reg = 0
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
@@ -282,7 +282,7 @@ let object = ""
         let length = 0
         let class_num = ""
         let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "09") {
@@ -307,7 +307,7 @@ let object = ""
         let Learning = -1
         let opo = ""
         let class_num = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "10") {
@@ -331,7 +331,7 @@ let object = ""
         let number = -1
         let opo = ""
         let class_num = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "11") {
@@ -354,7 +354,7 @@ let object = ""
         let Color = ""
         let class_num = ""
         let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "01") {
@@ -378,7 +378,7 @@ let object = ""
         let Apriltag_id = ""
         let class_num = "" 
         let opo = ""        
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             if (class_num == "04") {
@@ -405,7 +405,7 @@ let object = ""
         let class_num = ""
         let _22 = ""
         let opo = ""
-    opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+        opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
         if (opo[0] == "$") {
             class_num = "" + opo[1] + opo[2]
             _22 = opo[3]
@@ -423,11 +423,78 @@ let object = ""
         }
         opo = ""
         return face
-    
-
     }   
     
-    
+
+    let  speed_L= 0
+    let  speed_R= 0
+
+    //% blockId=k210_models_get_speed block="analysis speed"
+    //% weight=88
+    //% blockGap=10
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
+    export function get_motor_speed(){
+        
+     let class_num = ""
+     let opo = ""
+     opo = serial.readUntil(serial.delimiters(Delimiters.Hash))
+     if (opo[0] == "$") 
+     {
+        class_num = "" + opo[1] + opo[2]
+        if (class_num == "20") 
+        {
+            //左电机
+            if(opo[3]=="+")//速度为正
+            {
+                speed_L = parseFloat(opo.substr(4, 3))
+            }
+            else if(opo[3]=="-")
+            {
+                speed_L = -(parseFloat(opo.substr(4, 3)))
+            }
+
+            //右电机
+            if(opo[7]=="+")//速度为正
+            {
+                speed_R = parseFloat(opo.substr(8, 3))
+            }
+            else if(opo[7]=="-")
+            {
+                speed_R = -(parseFloat(opo.substr(8, 3)))
+            }
+        } 
+         else 
+        {
+            speed_L = 0
+            speed_R = 0
+        }
+     } 
+     else 
+     {
+        speed_L = 0
+        speed_R = 0
+     }
+     opo = ""
+     }
+
+
+    //% blockId=k210_models_speed_L block="get left motor"
+    //% weight=88
+    //% blockGap=10
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
+    export function get_motor_L(): number
+    {  
+        return speed_L
+    }
+
+     //% blockId=k210_models_speed_R block="get right motor"
+    //% weight=88
+    //% blockGap=10
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
+    export function get_motor_R(): number
+    {
+        return speed_R
+    }
 
 
 }
