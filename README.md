@@ -1,6 +1,6 @@
 # K210
 
-Extension for Yahboom K210 V1.0.0
+Extension for Yahboom K210 V1.0.1
 
 ## License
 
